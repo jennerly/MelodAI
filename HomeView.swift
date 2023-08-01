@@ -9,9 +9,24 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+        ZStack{
+            VStack{
+                Text("MelodAI")
+            } //vstack
+            
+            VStack{
+                Button("Feel") {
+                    
+                }
+                
+            } //vstack
+            
+        } //zstack
+        .background(
+                LinearGradient(gradient: Gradient(colors: [.white, .black]), startPoint: .top, endPoint: .bottom)
+            )
+    } //some view
+} //homeview
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
