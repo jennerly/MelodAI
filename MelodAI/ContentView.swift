@@ -18,6 +18,9 @@ struct ContentView: View {
                         .font(.title)
                         
                     Text("The app that uses AI, neuroscience, and music for the betterment of mental health")
+                        .font(.body)
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
                         .padding(.horizontal, 20.0)
                         .padding(.bottom, 20)
                     HStack (spacing: 10){
@@ -28,6 +31,7 @@ struct ContentView: View {
                             /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
                         }
                     } // hstack
+                    .foregroundColor(Color("customDarkBlue"))
                     VStack {
                         TextField("Email or username", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
                             .padding( 10.0)
@@ -38,19 +42,16 @@ struct ContentView: View {
                     .cornerRadius(20)
                     .shadow(color: Color("customDarkBlue"), radius: 3)
                     .padding(.all, 20.0)
-                    
+                    NavigationLink(destination: HomeView()) {
+                        Text("Login")
+                            .padding(.all, 10.0)
+                            .background(Color("MediumBlue"))
+                            .foregroundColor(Color("customDarkBlue"))
+                            .cornerRadius(10)
+                            .shadow(radius: 10)
+                    } // homeview
+                    .padding(.bottom, 20)
                 } .background(Color(hue: 0.555, saturation: 0.042, brightness: 0.958)) .cornerRadius(20) .padding(.horizontal, 20) .shadow(color: Color("ShadowDarkBlue"), radius: 50)
-                .toolbar {
-                    ToolbarItemGroup(placement: .status){
-                        NavigationLink(destination: HomeView()) {
-                            Text("Next")
-                                .padding(.horizontal)
-                                .background(Color(red: 0.124, green: 0.318, blue: 0.141))
-                                .foregroundColor(Color(red: 0.458, green: 0.817, blue: 0.48))
-                                .cornerRadius(10)
-                        } // homeview
-                    } // toolbaritemgroup
-                } // toolbar
             } // zstack
         } // nav stack
     } // var body view
