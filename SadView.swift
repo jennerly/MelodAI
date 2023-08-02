@@ -21,13 +21,19 @@ struct SadView: View {
                     HStack{
                         Text("MelodAI")
                             .font(.title)
+                            .foregroundColor(Color.white)
                         Spacer()
                         Text("User")
                             .fontWeight(.regular)
+                            .foregroundColor(Color.white)
                     } .padding()
                     Spacer()
                     Text("Sad")
-                    
+                        .foregroundColor(Color.white)
+                        .background(Circle()
+                            .frame(width: /*@START_MENU_TOKEN@*/50.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/50.0/*@END_MENU_TOKEN@*/))
+                        .foregroundColor(/*@START_MENU_TOKEN@*/Color("MediumBlue")/*@END_MENU_TOKEN@*/)
+                        
                     HStack{
                         Button("Songs") {
                             sadSongArray = true
@@ -47,6 +53,8 @@ struct SadView: View {
                             sadPodcastArray = false
                         } //noise
                     } //hstack
+                    .padding()
+                    
                     Spacer()
                     if sadSongArray == true {
                         List {
@@ -74,19 +82,32 @@ struct SadView: View {
                             
                         }
                     }
+                    Spacer()
+                        .padding(.bottom)
                 } //vstack
                 .toolbar {
                     ToolbarItemGroup(placement: .status){
                         NavigationLink(destination: HomeView()) {
                             Text("🏠")
                                 .font(.title)
+                        } // close home
+                        NavigationLink(destination:
+                            ThreadView()){
+                            Text("📃")
+                                .font(.title)
+                        } //close thread
+                        NavigationLink(destination:
+                            ProfileView()){
                             Text("👤")
-                        } // closing nav link
+                                .font(.title)
+                        } //close profile
                     } // closing toolbaritemgroup
                 } // closing tool bar
             } //closing nav stack
-            .toolbarBackground(Color("HotOrange"), for: .navigationBar)
+            .toolbarBackground(Color.pink, for: .navigationBar)
+
         } //closing zstack
+        
     } //closing someview
 } //closing struct
 

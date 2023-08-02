@@ -14,6 +14,8 @@
 		BD14FB0D2A7961D9001D99FE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD14FB0C2A7961D9001D99FE /* HomeView.swift */; };
 		BD82542F2A7AB1C00046788F /* FeelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD82542E2A7AB1C00046788F /* FeelView.swift */; };
 		BD8254312A7AB31F0046788F /* SadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8254302A7AB31F0046788F /* SadView.swift */; };
+		BD9682262A7AE42E00CFC3A8 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9682252A7AE42E00CFC3A8 /* ProfileView.swift */; };
+		BD9682282A7AE43F00CFC3A8 /* ThreadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9682272A7AE43F00CFC3A8 /* ThreadView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		BD14FB0C2A7961D9001D99FE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		BD82542E2A7AB1C00046788F /* FeelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeelView.swift; sourceTree = "<group>"; };
 		BD8254302A7AB31F0046788F /* SadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SadView.swift; sourceTree = "<group>"; };
+		BD9682252A7AE42E00CFC3A8 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		BD9682272A7AE43F00CFC3A8 /* ThreadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +45,8 @@
 		BD14FAF22A795DFF001D99FE = {
 			isa = PBXGroup;
 			children = (
+				BD9682252A7AE42E00CFC3A8 /* ProfileView.swift */,
+				BD9682272A7AE43F00CFC3A8 /* ThreadView.swift */,
 				BD14FB0C2A7961D9001D99FE /* HomeView.swift */,
 				BD82542E2A7AB1C00046788F /* FeelView.swift */,
 				BD8254302A7AB31F0046788F /* SadView.swift */,
@@ -150,6 +156,8 @@
 				BD14FB0D2A7961D9001D99FE /* HomeView.swift in Sources */,
 				BD8254312A7AB31F0046788F /* SadView.swift in Sources */,
 				BD14FB012A795DFF001D99FE /* ContentView.swift in Sources */,
+				BD9682282A7AE43F00CFC3A8 /* ThreadView.swift in Sources */,
+				BD9682262A7AE42E00CFC3A8 /* ProfileView.swift in Sources */,
 				BD14FAFF2A795DFF001D99FE /* MelodAIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
