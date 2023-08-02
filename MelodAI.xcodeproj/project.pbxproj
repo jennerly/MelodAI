@@ -12,6 +12,8 @@
 		BD14FB032A795E01001D99FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD14FB022A795E01001D99FE /* Assets.xcassets */; };
 		BD14FB062A795E01001D99FE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD14FB052A795E01001D99FE /* Preview Assets.xcassets */; };
 		BD14FB0D2A7961D9001D99FE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD14FB0C2A7961D9001D99FE /* HomeView.swift */; };
+		BD82542F2A7AB1C00046788F /* FeelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD82542E2A7AB1C00046788F /* FeelView.swift */; };
+		BD8254312A7AB31F0046788F /* SadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8254302A7AB31F0046788F /* SadView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		BD14FB022A795E01001D99FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD14FB052A795E01001D99FE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BD14FB0C2A7961D9001D99FE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		BD82542E2A7AB1C00046788F /* FeelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeelView.swift; sourceTree = "<group>"; };
+		BD8254302A7AB31F0046788F /* SadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SadView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +42,8 @@
 			isa = PBXGroup;
 			children = (
 				BD14FB0C2A7961D9001D99FE /* HomeView.swift */,
+				BD82542E2A7AB1C00046788F /* FeelView.swift */,
+				BD8254302A7AB31F0046788F /* SadView.swift */,
 				BD14FAFD2A795DFF001D99FE /* MelodAI */,
 				BD14FAFC2A795DFF001D99FE /* Products */,
 			);
@@ -140,7 +146,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD82542F2A7AB1C00046788F /* FeelView.swift in Sources */,
 				BD14FB0D2A7961D9001D99FE /* HomeView.swift in Sources */,
+				BD8254312A7AB31F0046788F /* SadView.swift in Sources */,
 				BD14FB012A795DFF001D99FE /* ContentView.swift in Sources */,
 				BD14FAFF2A795DFF001D99FE /* MelodAIApp.swift in Sources */,
 			);

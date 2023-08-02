@@ -11,20 +11,18 @@ struct HomeView: View {
     var body: some View {
         ZStack{
             VStack{
-                Text("MelodAI")
-            } //vstack
-            
-            VStack{
-                Button("Feel") {
-                    
-                }
-                
+                NavigationLink(destination: FeelView()) {
+                    Text("Feel")
+                        .font(.title)
+                        .padding(.all, 30)
+                        .background(Color("MediumBlue"))
+                        .foregroundColor(Color("customDarkBlue"))
+                        .cornerRadius(100)
+                        .shadow(radius: 10)
+                } // homeview
             } //vstack
             
         } //zstack
-        .background(
-                LinearGradient(gradient: Gradient(colors: [.white, .black]), startPoint: .top, endPoint: .bottom)
-            )
     } //some view
 } //homeview
 
