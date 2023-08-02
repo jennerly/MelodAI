@@ -14,10 +14,10 @@ struct NewToDoView: View {
     @Binding var showNewTask: Bool
     var body: some View {
         VStack {
-            Text("Task title:")
+            Text("Comment:")
                 .font(.title)
                 .fontWeight(.bold)
-            TextField("Enter the task description...", text: $title)
+            TextField("Enter your description...", text: $title)
                 .padding()
                 .background(Color(.systemGroupedBackground))
                 .cornerRadius(15)

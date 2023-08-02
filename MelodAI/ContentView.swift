@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var username = ""
+    @State private var password = ""
     var body: some View {
         NavigationStack {
             ZStack {
@@ -33,9 +35,9 @@ struct ContentView: View {
                     } // hstack
                     .foregroundColor(Color("customDarkBlue"))
                     VStack {
-                        TextField("Email or username", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                        TextField("Email or username", text: $username)
                             .padding( 10.0)
-                        TextField("Password", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                        TextField("Password", text: $password)
                             .padding(10.0)
                     } //vstack for login
                     .background(Color(red: /*@START_MENU_TOKEN@*/0.134/*@END_MENU_TOKEN@*/, green: /*@START_MENU_TOKEN@*/0.621/*@END_MENU_TOKEN@*/, blue: /*@START_MENU_TOKEN@*/0.739/*@END_MENU_TOKEN@*/))

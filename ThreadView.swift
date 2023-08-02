@@ -29,9 +29,9 @@ struct ThreadView: View {
             List {
                 ForEach (toDoItems) { toDoItem in
                     if toDoItem.isImportant == true {
-                        Text("🚨 " + (toDoItem.title ?? "No title"))
+                        Text("👍 " + (toDoItem.title ?? "No title"))
                     } else {
-                        Text(toDoItem.title ?? "No title")
+                        Text("👎" + (toDoItem.title ?? "No title"))
                     }
                 } .onDelete(perform: deleteTask)
             } //list
