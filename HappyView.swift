@@ -101,7 +101,7 @@ struct HappyView: View {
                         } //close thread
                         NavigationLink(destination:
                             ProfileView()){
-                            Text("👤")
+                            Text("📚")
                                 .font(.largeTitle)
                         } //close profile
                     } // closing toolbaritemgroup
