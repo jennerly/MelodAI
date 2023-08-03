@@ -23,14 +23,14 @@ struct NewToDoView: View {
                 .cornerRadius(15)
                 .padding()
             Toggle(isOn: $isImportant) {
-                Text("Is it important?")
+                Text("Did you like it?")
                     .padding()
             } //toggle
             Button(action: {
                 self.addTask(title: self.title, isImportant: self.isImportant)
                 self.showNewTask = false
             }) {
-                Text("Add")
+                Text("Comment")
             } .padding()
         } //vstack
     } //some view

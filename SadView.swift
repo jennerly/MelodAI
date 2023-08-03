@@ -14,7 +14,7 @@ struct SadView: View {
     var body: some View {
         NavigationStack{
             ZStack {
-                Image("darkBluetoLight")
+                Image("test2")
                     .resizable(resizingMode: .stretch)
                     .ignoresSafeArea()
                 VStack{
@@ -28,13 +28,13 @@ struct SadView: View {
                             .foregroundColor(Color.white)
                     } .padding()
                     Spacer()
+                    Spacer()
                     Text("Sad")
-                        .foregroundColor(Color.white)
-                        .background(Circle()
-                            .frame(width: /*@START_MENU_TOKEN@*/50.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/50.0/*@END_MENU_TOKEN@*/))
-                        .foregroundColor(/*@START_MENU_TOKEN@*/Color("MediumBlue")/*@END_MENU_TOKEN@*/)
+                        .font(.largeTitle)
+                        .fontWeight(.semibold)
+                        .foregroundColor(Color("customDarkBlue"))
                         
-                    HStack{
+                    HStack(spacing: 20){
                         Button("Songs") {
                             sadSongArray = true
                             sadPodcastArray = false
@@ -54,6 +54,7 @@ struct SadView: View {
                         } //noise
                     } //hstack
                     .padding()
+                    .foregroundColor(Color("customDarkBlue"))
                     
                     Spacer()
                     if sadSongArray == true {
@@ -89,17 +90,17 @@ struct SadView: View {
                     ToolbarItemGroup(placement: .status){
                         NavigationLink(destination: HomeView()) {
                             Text("🏠")
-                                .font(.title)
+                                .font(.largeTitle)
                         } // close home
                         NavigationLink(destination:
                             ThreadView()){
                             Text("📃")
-                                .font(.title)
+                                .font(.largeTitle)
                         } //close thread
                         NavigationLink(destination:
                             ProfileView()){
                             Text("👤")
-                                .font(.title)
+                                .font(.largeTitle)
                         } //close profile
                     } // closing toolbaritemgroup
                 } // closing tool bar

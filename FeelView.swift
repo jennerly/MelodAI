@@ -9,26 +9,120 @@ import SwiftUI
 
 struct FeelView: View {
     var body: some View {
-        ZStack{
-            VStack{
-                NavigationLink(destination: SadView()) {
-                    Text("Sad")
-                        .font(.title)
-                        .padding(.all, 30)
-                        .background(Color("MediumBlue"))
-                        .foregroundColor(Color("customDarkBlue"))
-                        .cornerRadius(100)
-                        .shadow(radius: 10)
-                } // homeview
-                Text("Feel")
-                    .font(.title)
-                    .padding(.all, 30)
-                    .background(Color("MediumBlue"))
-                    .foregroundColor(Color("customDarkBlue"))
-                    .cornerRadius(100)
-                    .shadow(radius: 10)
-                
-                
+        NavigationStack{
+            ZStack{
+                Image("orangeToBlueREAL")
+                    .resizable(resizingMode: .stretch)
+                    .ignoresSafeArea()
+                VStack{
+                    HStack{
+                        Text("MelodAI")
+                            .font(.title)
+                            .fontWeight(.semibold)
+                            .foregroundColor(Color.white)
+                        Spacer()
+                        Text("👤 User")
+                            .font(.title2)
+                            .fontWeight(.semibold)
+                            .foregroundColor(Color.white)
+                    } .padding()
+                    Spacer(minLength: 75)
+                    Text("How do you feel?")
+                        .padding()
+                        .font(.largeTitle)
+                        .fontWeight(.semibold)
+                        .foregroundColor(Color("HotOrange"))
+                    VStack(spacing: 20){
+                        HStack(spacing: 20){
+                            NavigationLink(destination: CalmView()) {
+                                Text("😌")
+                                    .padding(.all, 30)
+                                    .background(Color("LightBlue"))
+                                    .cornerRadius(100)
+                                    .shadow(radius: 10)
+                            } // sadview
+                            NavigationLink(destination: SleepyView()) {
+                                Text("😴")
+                                    .padding(.all, 30)
+                                    .background(Color("LightBlue"))
+                                    .cornerRadius(100)
+                                    .shadow(radius: 10)
+                            } // sadview
+                            NavigationLink(destination: FocusView()) {
+                                Text("🧘🏾‍♀️")
+                                    .padding(.all, 30)
+                                    .background(Color("LightBlue"))
+                                    .cornerRadius(100)
+                                    .shadow(radius: 10)
+                            } // sadview
+                        }
+                        HStack(spacing: 20) {
+                            NavigationLink(destination: HypeView()) {
+                                Text("😜")
+                                    .padding(.all, 30)
+                                    .background(Color("LightBlue"))
+                                    .cornerRadius(100)
+                                    .shadow(radius: 10)
+                            } // sadview
+                            NavigationLink(destination: ReflectiveView()) {
+                                Text("🧠")
+                                    .padding(.all, 30)
+                                    .background(Color("LightBlue"))
+                                    .cornerRadius(100)
+                                    .shadow(radius: 10)
+                            } // sadview
+                            NavigationLink(destination: HappyView()) {
+                                Text("😊")
+                                    .padding(.all, 30)
+                                    .background(Color("LightBlue"))
+                                    .cornerRadius(100)
+                                    .shadow(radius: 10)
+                            } // happyview
+                        }
+                        HStack(spacing: 20) {
+                            NavigationLink(destination: VengefulView()) {
+                                Text("😡")
+                                    .padding(.all, 30)
+                                    .background(Color("LightBlue"))
+                                    .cornerRadius(100)
+                                    .shadow(radius: 10)
+                            } // sadview
+                            NavigationLink(destination: SadView()) {
+                                Text("😥")
+                                    .padding(.all, 30)
+                                    .background(Color("LightBlue"))
+                                    .cornerRadius(100)
+                                    .shadow(radius: 10)
+                            } // sadview
+                            NavigationLink(destination: CustomView()) {
+                                Text("➕")
+                                    .padding(.all, 30)
+                                    .background(Color("LightBlue"))
+                                    .cornerRadius(100)
+                                    .shadow(radius: 10)
+                            } // sadview
+                        }
+                        Spacer()
+                    }.font(.largeTitle)
+                        .toolbar {
+                            ToolbarItemGroup(placement: .status){
+                                NavigationLink(destination: HomeView()) {
+                                    Text("🏠")
+                                        .font(.largeTitle)
+                                } // close home
+                                NavigationLink(destination:
+                                                ThreadView()){
+                                    Text("📃")
+                                        .font(.largeTitle)
+                                } //close thread
+                                NavigationLink(destination:
+                                                ProfileView()){
+                                    Text("👥")
+                                        .font(.largeTitle)
+                                } //close profile
+                            } // closing toolbaritemgroup
+                        } // closing tool bar
+                }
             }
         }
     }

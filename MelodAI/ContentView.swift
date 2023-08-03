@@ -10,6 +10,8 @@ import SwiftUI
 struct ContentView: View {
     @State private var username = ""
     @State private var password = ""
+    @State private var enterUsername = "Username or email"
+    @State private var enterPassword = "Enter password"
     var body: some View {
         NavigationStack {
             ZStack {
@@ -27,24 +29,26 @@ struct ContentView: View {
                         .padding(.bottom, 20)
                     HStack (spacing: 10){
                         Button("Login") {
-                            /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+                            enterUsername = "Username or email"
+                            enterPassword = "Enter password"
                         }
                         Button("Signup") {
-                            /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+                            enterUsername = "Create username or enter email"
+                            enterPassword = "Create password"
                         }
                     } // hstack
                     .foregroundColor(Color("customDarkBlue"))
                     VStack {
-                        TextField("Email or username", text: $username)
+                        TextField(enterUsername, text: $username)
                             .padding( 10.0)
-                        TextField("Password", text: $password)
+                        TextField(enterPassword, text: $password)
                             .padding(10.0)
                     } //vstack for login
                     .background(Color(red: /*@START_MENU_TOKEN@*/0.134/*@END_MENU_TOKEN@*/, green: /*@START_MENU_TOKEN@*/0.621/*@END_MENU_TOKEN@*/, blue: /*@START_MENU_TOKEN@*/0.739/*@END_MENU_TOKEN@*/))
                     .cornerRadius(20)
                     .shadow(color: Color("customDarkBlue"), radius: 3)
                     .padding(.all, 20.0)
-                    NavigationLink(destination: HomeView()) {
+                    NavigationLink(destination: FeelView()) {
                         Text("Login")
                             .padding(.all, 10.0)
                             .background(Color("MediumBlue"))

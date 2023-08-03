@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD082F652A7BE5280009EAAF /* CalmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD082F642A7BE5280009EAAF /* CalmView.swift */; };
+		BD082F672A7BE5670009EAAF /* SleepyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD082F662A7BE5670009EAAF /* SleepyView.swift */; };
+		BD082F692A7BE5740009EAAF /* FocusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD082F682A7BE5740009EAAF /* FocusView.swift */; };
+		BD082F6B2A7BE5880009EAAF /* HypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD082F6A2A7BE5880009EAAF /* HypeView.swift */; };
+		BD082F6D2A7BE5A00009EAAF /* ReflectiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD082F6C2A7BE5A00009EAAF /* ReflectiveView.swift */; };
+		BD082F6F2A7BE5B30009EAAF /* HappyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD082F6E2A7BE5B30009EAAF /* HappyView.swift */; };
+		BD082F712A7BE5D80009EAAF /* VengefulView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD082F702A7BE5D80009EAAF /* VengefulView.swift */; };
+		BD082F732A7BE5E60009EAAF /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD082F722A7BE5E60009EAAF /* CustomView.swift */; };
 		BD14FAFF2A795DFF001D99FE /* MelodAIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD14FAFE2A795DFF001D99FE /* MelodAIApp.swift */; };
 		BD14FB012A795DFF001D99FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD14FB002A795DFF001D99FE /* ContentView.swift */; };
 		BD14FB032A795E01001D99FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD14FB022A795E01001D99FE /* Assets.xcassets */; };
@@ -16,13 +24,21 @@
 		BD8254312A7AB31F0046788F /* SadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8254302A7AB31F0046788F /* SadView.swift */; };
 		BD9682262A7AE42E00CFC3A8 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9682252A7AE42E00CFC3A8 /* ProfileView.swift */; };
 		BD9682282A7AE43F00CFC3A8 /* ThreadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9682272A7AE43F00CFC3A8 /* ThreadView.swift */; };
-		BD96822E2A7AE64B00CFC3A8 /* To-Do List.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BD96822C2A7AE64B00CFC3A8 /* To-Do List.xcdatamodeld */; };
+		BD96822E2A7AE64B00CFC3A8 /* MelodAI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BD96822C2A7AE64B00CFC3A8 /* MelodAI.xcdatamodeld */; };
 		BD9682302A7AE6A900CFC3A8 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96822F2A7AE6A900CFC3A8 /* Persistence.swift */; };
 		BD9682342A7AE70B00CFC3A8 /* NewThreadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9682332A7AE70B00CFC3A8 /* NewThreadView.swift */; };
 		BD9682362A7AE72F00CFC3A8 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9682352A7AE72F00CFC3A8 /* ToDoItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD082F642A7BE5280009EAAF /* CalmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalmView.swift; sourceTree = "<group>"; };
+		BD082F662A7BE5670009EAAF /* SleepyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepyView.swift; sourceTree = "<group>"; };
+		BD082F682A7BE5740009EAAF /* FocusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusView.swift; sourceTree = "<group>"; };
+		BD082F6A2A7BE5880009EAAF /* HypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypeView.swift; sourceTree = "<group>"; };
+		BD082F6C2A7BE5A00009EAAF /* ReflectiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectiveView.swift; sourceTree = "<group>"; };
+		BD082F6E2A7BE5B30009EAAF /* HappyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappyView.swift; sourceTree = "<group>"; };
+		BD082F702A7BE5D80009EAAF /* VengefulView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VengefulView.swift; sourceTree = "<group>"; };
+		BD082F722A7BE5E60009EAAF /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		BD14FAFB2A795DFF001D99FE /* MelodAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MelodAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD14FAFE2A795DFF001D99FE /* MelodAIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MelodAIApp.swift; sourceTree = "<group>"; };
 		BD14FB002A795DFF001D99FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,6 +76,14 @@
 				BD9682272A7AE43F00CFC3A8 /* ThreadView.swift */,
 				BD14FB0C2A7961D9001D99FE /* HomeView.swift */,
 				BD82542E2A7AB1C00046788F /* FeelView.swift */,
+				BD082F722A7BE5E60009EAAF /* CustomView.swift */,
+				BD082F702A7BE5D80009EAAF /* VengefulView.swift */,
+				BD082F6E2A7BE5B30009EAAF /* HappyView.swift */,
+				BD082F6C2A7BE5A00009EAAF /* ReflectiveView.swift */,
+				BD082F6A2A7BE5880009EAAF /* HypeView.swift */,
+				BD082F682A7BE5740009EAAF /* FocusView.swift */,
+				BD082F662A7BE5670009EAAF /* SleepyView.swift */,
+				BD082F642A7BE5280009EAAF /* CalmView.swift */,
 				BD8254302A7AB31F0046788F /* SadView.swift */,
 				BD14FAFD2A795DFF001D99FE /* MelodAI */,
 				BD14FAFC2A795DFF001D99FE /* Products */,
@@ -89,7 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				BD14FB052A795E01001D99FE /* Preview Assets.xcassets */,
-				BD96822C2A7AE64B00CFC3A8 /* To-Do List.xcdatamodeld */,
+				BD96822C2A7AE64B00CFC3A8 /* MelodAI.xcdatamodeld */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -164,16 +188,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD082F712A7BE5D80009EAAF /* VengefulView.swift in Sources */,
 				BD9682302A7AE6A900CFC3A8 /* Persistence.swift in Sources */,
+				BD082F6F2A7BE5B30009EAAF /* HappyView.swift in Sources */,
+				BD082F692A7BE5740009EAAF /* FocusView.swift in Sources */,
 				BD82542F2A7AB1C00046788F /* FeelView.swift in Sources */,
+				BD082F6D2A7BE5A00009EAAF /* ReflectiveView.swift in Sources */,
 				BD14FB0D2A7961D9001D99FE /* HomeView.swift in Sources */,
+				BD082F732A7BE5E60009EAAF /* CustomView.swift in Sources */,
+				BD082F6B2A7BE5880009EAAF /* HypeView.swift in Sources */,
+				BD082F672A7BE5670009EAAF /* SleepyView.swift in Sources */,
 				BD8254312A7AB31F0046788F /* SadView.swift in Sources */,
 				BD14FB012A795DFF001D99FE /* ContentView.swift in Sources */,
+				BD082F652A7BE5280009EAAF /* CalmView.swift in Sources */,
 				BD9682282A7AE43F00CFC3A8 /* ThreadView.swift in Sources */,
 				BD9682262A7AE42E00CFC3A8 /* ProfileView.swift in Sources */,
 				BD9682362A7AE72F00CFC3A8 /* ToDoItem.swift in Sources */,
 				BD9682342A7AE70B00CFC3A8 /* NewThreadView.swift in Sources */,
-				BD96822E2A7AE64B00CFC3A8 /* To-Do List.xcdatamodeld in Sources */,
+				BD96822E2A7AE64B00CFC3A8 /* MelodAI.xcdatamodeld in Sources */,
 				BD14FAFF2A795DFF001D99FE /* MelodAIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -375,13 +407,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		BD96822C2A7AE64B00CFC3A8 /* To-Do List.xcdatamodeld */ = {
+		BD96822C2A7AE64B00CFC3A8 /* MelodAI.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				BD96822D2A7AE64B00CFC3A8 /* To-Do List.xcdatamodel */,
 			);
 			currentVersion = BD96822D2A7AE64B00CFC3A8 /* To-Do List.xcdatamodel */;
-			path = "To-Do List.xcdatamodeld";
+			path = MelodAI.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

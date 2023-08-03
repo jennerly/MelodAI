@@ -1,6 +1,6 @@
 //
-//  To_Do_ListApp.swift
-//  To-Do List
+//  MelodAIApp.swift
+//  
 //
 //  Created by scholar on 8/2/23.
 //
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct To_Do_ListApp: App {
+struct MelodAIApp: App {
     let persistenceController = PersistenceController.shared
     var body: some Scene {
         WindowGroup {

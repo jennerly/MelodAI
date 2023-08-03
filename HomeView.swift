@@ -13,9 +13,10 @@ struct HomeView: View {
             VStack{
                 NavigationLink(destination: FeelView()) {
                     Text("Feel")
-                        .font(.title)
+                        .font(.largeTitle)
+                        .fontWeight(.semibold)
                         .padding(.all, 30)
-                        .background(Color("MediumBlue"))
+                        .background(Color("LightBlue"))
                         .foregroundColor(Color("customDarkBlue"))
                         .cornerRadius(100)
                         .shadow(radius: 10)
