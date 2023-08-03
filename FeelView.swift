@@ -11,7 +11,7 @@ struct FeelView: View {
     var body: some View {
         NavigationStack{
             ZStack{
-                Image("orangeToBlueREAL")
+                Image("orangeToBlue")
                     .resizable(resizingMode: .stretch)
                     .ignoresSafeArea()
                 VStack{
@@ -27,7 +27,7 @@ struct FeelView: View {
                             .foregroundColor(Color.white)
                     } .padding()
                     Spacer(minLength: 75)
-                    Text("How do you feel?")
+                    Text("How do you want to feel?")
                         .padding()
                         .font(.largeTitle)
                         .fontWeight(.semibold)
@@ -64,7 +64,7 @@ struct FeelView: View {
                                     .cornerRadius(100)
                                     .shadow(radius: 10)
                             } // sadview
-                            NavigationLink(destination: ReflectiveView()) {
+                            NavigationLink(destination: MindfulView()) {
                                 Text("🧠")
                                     .padding(.all, 30)
                                     .background(Color("LightBlue"))
@@ -106,7 +106,7 @@ struct FeelView: View {
                     }.font(.largeTitle)
                         .toolbar {
                             ToolbarItemGroup(placement: .status){
-                                NavigationLink(destination: HomeView()) {
+                                NavigationLink(destination: FeelView()) {
                                     Text("🏠")
                                         .font(.largeTitle)
                                 } // close home

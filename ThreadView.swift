@@ -15,7 +15,7 @@ struct ThreadView: View {
     var body: some View {
         NavigationStack{
             ZStack{
-                Image("orangeToBlueREAL")
+                Image("white")
                     .resizable(resizingMode: .stretch)
                     .ignoresSafeArea()
                 VStack{
@@ -23,18 +23,19 @@ struct ThreadView: View {
                         Text("MelodAI")
                             .font(.title)
                             .fontWeight(.semibold)
-                            .foregroundColor(Color.white)
+                            .foregroundColor(Color("customDarkBlue"))
                         Spacer()
                         Text("👤 User")
                             .font(.title2)
                             .fontWeight(.semibold)
-                            .foregroundColor(Color.white)
+                            .foregroundColor(Color("customDarkBlue"))
                     } .padding()
                     VStack {
                         HStack{
                             Text("Thread")
                                 .font(.system(size: 40))
-                                .fontWeight(.black)
+                                .fontWeight(.semibold)
+                                .foregroundColor(Color("customDarkBlue"))
                             Spacer()
                             Button(action: {
                                 self.showNewTask = true
@@ -58,7 +59,24 @@ struct ThreadView: View {
                     if showNewTask {
                         NewToDoView(title: "", isImportant: false, showNewTask: $showNewTask)
                     } //if
-                }
+                }.toolbar {
+                    ToolbarItemGroup(placement: .status){
+                        NavigationLink(destination: FeelView()) {
+                            Text("🏠")
+                                .font(.largeTitle)
+                        } // close home
+                        NavigationLink(destination:
+                                        ThreadView()){
+                            Text("📃")
+                                .font(.largeTitle)
+                        } //close thread
+                        NavigationLink(destination:
+                                        ProfileView()){
+                            Text("👥")
+                                .font(.largeTitle)
+                        } //close profile
+                    } // closing toolbaritemgroup
+                } // closing tool bar
             } //zstack
     } //navstack
     } //some view

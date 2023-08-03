@@ -18,9 +18,13 @@ struct ContentView: View {
                 Color("customDarkBlue")
                     .ignoresSafeArea()
                 VStack(spacing: 10) {
+                    Image("icon")
+                        .resizable(resizingMode: .stretch)
+                        .aspectRatio(contentMode: .fit)
                     Text("MelodAI")
-                        .font(.title)
-                        
+                        .font(.largeTitle)
+                        .fontWeight(.semibold)
+                        .foregroundColor(Color("HotOrange"))
                     Text("The app that uses AI, neuroscience, and music for the betterment of mental health")
                         .font(.body)
                         .fontWeight(.light)

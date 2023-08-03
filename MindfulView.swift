@@ -1,5 +1,5 @@
 //
-//  vengefulView.swift
+//  mindfulView.swift
 //  MelodAI
 //
 //  Created by scholar on 8/2/23.
@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct VengefulView: View {
-    @State private var vengefulSongArray = false
-    @State private var vengefulPodcastArray = false
-    @State private var vengefulNoiseArray = false
+struct MindfulView: View {
+    @State private var mindfulSongArray = false
+    @State private var mindfulPodcastArray = false
+    @State private var mindfulNoiseArray = false
     var body: some View {
         NavigationStack{
             ZStack {
-                Image("blue")
+                Image("blueToOrange")
                     .resizable(resizingMode: .stretch)
                     .ignoresSafeArea()
                 VStack{
@@ -28,55 +28,55 @@ struct VengefulView: View {
                             .foregroundColor(Color.white)
                     } .padding()
                     Spacer()
-                    Text("Vengeful")
+                    Text("Mindful")
                         .font(.largeTitle)
                         .fontWeight(.semibold)
                         .foregroundColor(Color("customDarkBlue"))
                         
                     HStack(spacing: 20){
                         Button("Songs") {
-                            vengefulSongArray = true
-                            vengefulPodcastArray = false
-                            vengefulNoiseArray = false
+                            mindfulSongArray = true
+                            mindfulPodcastArray = false
+                            mindfulNoiseArray = false
                         } //songs
                         
                         Button("Podcasts") {
-                            vengefulPodcastArray = true
-                            vengefulSongArray = false
-                            vengefulNoiseArray = false
+                            mindfulPodcastArray = true
+                            mindfulSongArray = false
+                            mindfulNoiseArray = false
                         } //podcasts
                         
                         Button("Noises") {
-                            vengefulNoiseArray = true
-                            vengefulSongArray = false
-                            vengefulPodcastArray = false
+                            mindfulNoiseArray = true
+                            mindfulSongArray = false
+                            mindfulPodcastArray = false
                         } //noise
                     } //hstack
                     .padding()
                     .foregroundColor(Color("customDarkBlue"))
                     
                     Spacer()
-                    if vengefulSongArray == true {
+                    if mindfulSongArray == true {
                         List {
-                            Text("the drugs dont work - the verge")
-                            Text("Robbie Williams - Angels")
-                            Text("Elton John's - Sorry Seems to Be the Hardest Word")
-                            Text("I Will Always Love - Whitney Houston")
-                            Text("Nothing Compares 2 U - Sinead O'Connor")
-                            Text("Leave Right Now - Will Young")
-                            Text("Are You Lonesome Tonight? - Elvis Presley")
-                            Text("Beautiful - Christina Aguilera")
+                            Text("Weightless (1 & 2) - Marconi Union")
+                            Text("Majesty - Dexter Britain")
+                            Text("The Secret Life of Daydreams - Dario Marianelli")
+                            Text("Lotus - Eskimotion")
+                            Text("Intro (delirium) - Ellie Goulding")
+                            Text("Aqueous transmission - incubus")
                         }
-                    } else if vengefulPodcastArray == true {
+                    } else if mindfulPodcastArray == true {
                         List {
-                            Text("Sorry About The Kid")
-                            Text("This American Life")
-                            Text("Unread")
-                            Text("Griefcast")
-                            Text("Alligator Candy")
-                            Text("Heavyweight")
+                            Text("Black People Love Paramore")
+                            Text("Become Your Own Sanctuary")
+                            Text("The Internet Said So")
+                            Text("Giggly Squad")
+                            Text("De-Influenced with Dani Austin")
+                            Text("Chaotic Advice We Learned in Our 20's")
+                            Text("Anything goes with Emma Chamberlain")
+                            Text("Oversharing")
                         }
-                    } else if vengefulNoiseArray == true {
+                    } else if mindfulNoiseArray == true {
                         List {
                             Text("White noise")
                             Text("Pink noise")
@@ -114,8 +114,8 @@ struct VengefulView: View {
     } //closing someview
 } //closing struct
 
-struct VengefulView_Previews: PreviewProvider {
+struct MindfulView_Previews: PreviewProvider {
     static var previews: some View {
-        VengefulView()
+        MindfulView()
     }
 }

@@ -12,7 +12,7 @@ struct MelodAIApp: App {
     let persistenceController = PersistenceController.shared
     var body: some Scene {
         WindowGroup {
-            ThreadView()
+            ContentView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

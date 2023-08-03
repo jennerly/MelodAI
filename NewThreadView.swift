@@ -17,6 +17,7 @@ struct NewToDoView: View {
             Text("Comment:")
                 .font(.title)
                 .fontWeight(.bold)
+                .foregroundColor(Color("MediumBlue"))
             TextField("Enter your description...", text: $title)
                 .padding()
                 .background(Color(.systemGroupedBackground))
@@ -31,6 +32,8 @@ struct NewToDoView: View {
                 self.showNewTask = false
             }) {
                 Text("Comment")
+                    .foregroundColor(Color("MediumBlue"))
+                    .padding(.bottom, 20)
             } .padding()
         } //vstack
     } //some view

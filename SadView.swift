@@ -14,7 +14,7 @@ struct SadView: View {
     var body: some View {
         NavigationStack{
             ZStack {
-                Image("test2")
+                Image("blue")
                     .resizable(resizingMode: .stretch)
                     .ignoresSafeArea()
                 VStack{
@@ -23,11 +23,10 @@ struct SadView: View {
                             .font(.title)
                             .foregroundColor(Color.white)
                         Spacer()
-                        Text("User")
+                        Text("👤 User")
                             .fontWeight(.regular)
                             .foregroundColor(Color.white)
                     } .padding()
-                    Spacer()
                     Spacer()
                     Text("Sad")
                         .font(.largeTitle)
@@ -59,36 +58,39 @@ struct SadView: View {
                     Spacer()
                     if sadSongArray == true {
                         List {
-                            Text("song1")
-                            Text("song2")
-                            Text("song3")
-                            Text("song4")
-                            Text("song5")
+                            Text("the drugs dont work - the verge")
+                            Text("Robbie Williams - Angels")
+                            Text("Elton John's - Sorry Seems to Be the Hardest Word")
+                            Text("I Will Always Love - Whitney Houston")
+                            Text("Nothing Compares 2 U - Sinead O'Connor")
+                            Text("Leave Right Now - Will Young")
+                            Text("Are You Lonesome Tonight? - Elvis Presley")
+                            Text("Beautiful - Christina Aguilera")
                         }
                     } else if sadPodcastArray == true {
                         List {
-                            Text("podcast1")
-                            Text("podcast2")
-                            Text("podcast3")
-                            Text("podcast4")
-                            Text("podcast5")
+                            Text("Sorry About The Kid")
+                            Text("This American Life")
+                            Text("Unread")
+                            Text("Griefcast")
+                            Text("Alligator Candy")
+                            Text("Heavyweight")
                         }
                     } else if sadNoiseArray == true {
                         List {
-                            Text("noise1")
-                            Text("noise2")
-                            Text("noise3")
-                            Text("noise4")
-                            Text("noise5")
-                            
+                            Text("White noise")
+                            Text("Pink noise")
+                            Text("Brown noise")
+                            Text("Blue noise")
+                            Text("Green noise")
+                            Text("Grey noise")
+                            Text("Violet noise")
                         }
                     }
-                    Spacer()
-                        .padding(.bottom)
                 } //vstack
                 .toolbar {
                     ToolbarItemGroup(placement: .status){
-                        NavigationLink(destination: HomeView()) {
+                        NavigationLink(destination: FeelView()) {
                             Text("🏠")
                                 .font(.largeTitle)
                         } // close home
