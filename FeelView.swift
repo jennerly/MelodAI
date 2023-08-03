@@ -29,7 +29,7 @@ struct FeelView: View {
                     Spacer(minLength: 75)
                     Text("How do you want to feel?")
                         .padding()
-                        .font(.largeTitle)
+                        .font(.title)
                         .fontWeight(.semibold)
                         .foregroundColor(Color("HotOrange"))
                     VStack(spacing: 20){
